@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcom to frontend/backend testing</title>
+	<script type="importmap">
+	{
+		"imports": {
+			"three": "https://cdn.jsdelivr.net/npm/three@0.177.0/build/three.module.js",
+			"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.177.0/examples/jsm/",
+			"cg-module": "{{ url_for('static', filename='cg-module.js') }}"
+		}
+	}
+	</script>
+	<script src="{{ url_for('static', filename='app.js') }}" type="module"></script>
+</head>
+<body>
+	<h1>Flask Frontend/Backend Sample</h1>
+	<label for="name">Input</label><br>
+	<input type="text" id="name" placeholder="Enter your name"><br>
+	<button type="button" id="send">Send</button><br>
+	<label for="output">Output:</label><br>
+	<textarea id="output" rows="8" readonly></textarea>
+</body>
+</html>

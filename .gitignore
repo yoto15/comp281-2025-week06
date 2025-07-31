@@ -1,0 +1,5 @@
+cg-env/
+flask/__pycache__/
+flask/uploads/
+example.txt
+data.json
